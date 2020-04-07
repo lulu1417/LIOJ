@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#define MAX 255
+#define MAX 10000
 int i = 0, j = 0;
 int main()
 {
@@ -32,14 +32,9 @@ int main()
     int length = strlen(str) + 1;
     for(i=0; i<m; i++)
     {
-        for(j=0; j<length; j++)
-        {
-            if(j == arr[i])
-            {
-                printf("%c", str[j-1]);
-            }
 
-        }
+        printf("%c", str[arr[i]-1]);
+
 
     }
 
